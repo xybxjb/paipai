@@ -6,10 +6,9 @@ def clear(user_id,ship_id):
     url = "https://ranch.ifreetalk.com/testToolsController/clearShipSail/user_id/"+str(user_id)+"/ship_id/"+str(ship_id)
     print(url)
     rest = requests.get(url, stream=True)
-    s = rest.raw.read()
+    print(rest.text)
+    # s = rest.raw.read()
     # print(s.decode('utf-8'))
-
-
 
 
 def use(user_id_list):
@@ -19,8 +18,11 @@ def use(user_id_list):
 
 
 if __name__ == "__main__":
+    # 用户列表
     user_id_list = [
-        
+        # 1000021299
+        1000021296
+        # 1000021261
     ]
     for user_id in user_id_list:
         use(user_id)

@@ -30,21 +30,21 @@ def weaponsLv(userId, lv=0, weaponsId=None):
             weaponsId) + "&lv=" + str(lv)
         print(url)
         r = requests.get(url, stream=True)
-        s = r.raw.read()
-        result = s.decode('utf-8')
-        print(result)
+        # s = r.raw.read()
+        # result = s.decode('utf-8')
+        # print(result)
 
 def make_big_ship(user_id_list):
     for user_id  in user_id_list:
         # ## 设置神器等级
-        weaponsLv(user_id,10)
+        weaponsLv(user_id,11)
 
 
 
 if __name__ == '__main__':
     user_id_list = [
-        9003200000012268
-        # 9003200000012269
+        # 9003200000012268
+        9003200000012269
     ]
     for user_id in user_id_list:
         make_big_ship(user_id_list)
