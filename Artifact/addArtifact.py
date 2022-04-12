@@ -60,7 +60,7 @@ def make_big_ship(user_id_list):
 
 if __name__ == '__main__':
     user_id_list = [
-        9003200000012269
+        9003200100007420
     ]
     for user_id in user_id_list:
         make_big_ship(user_id_list)
