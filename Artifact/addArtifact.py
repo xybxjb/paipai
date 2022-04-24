@@ -54,13 +54,13 @@ def weaponsLv(userId, lv=0, weaponsId=None, is_add_weapons=True):
 def make_big_ship(user_id_list):
     for user_id  in user_id_list:
         # ## 设置神器等级
-        weaponsLv(user_id,11)
+        weaponsLv(user_id,15)
 
 
 
 if __name__ == '__main__':
     user_id_list = [
-        9003200100007420
+        9003200100008170
     ]
     for user_id in user_id_list:
         make_big_ship(user_id_list)
