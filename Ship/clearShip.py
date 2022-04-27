@@ -20,8 +20,7 @@ def use(user_id_list):
 if __name__ == "__main__":
     # 用户列表
     user_id_list = [
-        1000021214
-
+        1000002810
     ]
     for user_id in user_id_list:
         use(user_id)
