@@ -13,7 +13,7 @@ def clearDaily(user_id):
 if __name__ == "__main__":
     # 用户列表
     user_id_list = [
-        9003200100011800
+        9003200100011887
     ]
     for user_id in user_id_list:
         clearDaily(user_id)
