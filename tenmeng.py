@@ -7,7 +7,7 @@ redisCon = redis.Redis(host='10.101.166.100', port=19000, db=0)
 
 
 def ten(allanceId):
-    redis_key_single = "champion:award:%d:activity:set"%(int(allanceId))
+    redis_key_single = "champion:award:%d:0:activity:set"%(int(allanceId))
     redisCon.delete(redis_key_single)
     
 
