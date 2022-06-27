@@ -15,9 +15,7 @@ def clear(user_id):
 if __name__ == "__main__":
     # 用户列表
     user_id_list = [
-9003200100012310,
-9003200100012311,
-9003200100012565
+9003200100015217
     ]
     for user_id in user_id_list:
         clear(user_id)
