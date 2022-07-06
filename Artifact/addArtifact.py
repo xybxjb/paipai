@@ -6,14 +6,16 @@
     @proto
     @FileName : Ship3dCase.py
     功能描述：船相关的测测试用例
+
+
+    服务器端口17568
 """
-from time import time
 import requests
 
 
 def AddCommonItems(userID, goods_id, goods_count):
     # gm_ip =get_gm_ip(userID)
-    gm_ip ="http://10.102.21.42:5999"
+    gm_ip ="http://10.102.27.76:5999"
     goods_id = goods_id
     url = gm_ip + "/addItem?userId=" + str(userID) + "&id=" + str(
         goods_id) + "&count=" + str(
@@ -55,13 +57,13 @@ def weaponsLv(userId, lv=0, weaponsId=None, is_add_weapons=True):
 def make_big_ship(user_id_list):
     for user_id  in user_id_list:
         # ## 设置神器等级
-        weaponsLv(user_id,7)
+        weaponsLv(user_id,14)
 
 
 
 if __name__ == '__main__':
     user_id_list = [
-9003200100012094
+        9003200100015597
     ]
     for user_id in user_id_list:
         make_big_ship(user_id_list)
